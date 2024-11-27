@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section id="periksa-domain" class="services">
+    <div class="container mt-5 mb-5">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold text-capitalize">Periksa Domain</h1>
+        <div class="heading-line"></div>
+        <!-- <p class="lh-lg">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero illum architecto modi.
+        </p> -->
+      </div>
+      <div class="row text-white">
+        <div class="container d-flex justify-content-center">
+          <div class="col-10 gradient shadow p-3 border">
+            <div class="form w-100 pb-2">
+              <form action="/prediksi" method="GET" class="row" enctype="multipart/form-data">
+                <div class="col-lg-12 mb-3">
+                  <input type="text" name="domain" id="domain"
+                    placeholder="Masukkan Domain / URL. Contoh : unpak.ac.id"
+                    class="shadow form-control form-control-lg"
+                    autocomplete="off" required>
+                </div>
+                <div class="text-center d-grid mt-1">
+                  <button type="submit" class="btn btn-primary rounded-pill pt-3 pb-3" value="prediksi">
+                    submit
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
